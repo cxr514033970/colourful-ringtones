@@ -1,0 +1,279 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".CMMusicDemo" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/initButton"
+                    android:layout_width="130dip"
+                    android:layout_height="60dip"
+                    android:text="初始化" />
+
+                <Button
+                    android:id="@+id/login"
+                    android:layout_width="130dip"
+                    android:layout_height="60dip"
+                    android:layout_marginLeft="20dip"
+                    android:text="短信验证码登录" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/fullsong"
+                    android:layout_width="130dip"
+                    android:layout_height="80dip"
+                    android:text="全曲下载" />
+
+                <Button
+                    android:id="@+id/fullsongsms"
+                    android:layout_width="130dip"
+                    android:layout_height="80dip"
+                    android:layout_marginLeft="20dip"
+                    android:text="短信全曲下载" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/vRing"
+                    android:layout_width="130dip"
+                    android:layout_height="80dip"
+                    android:text="振铃下载" />
+
+                <Button
+                    android:id="@+id/vRingsms"
+                    android:layout_width="130dip"
+                    android:layout_height="80dip"
+                    android:layout_marginLeft="20dip"
+                    android:text="短信振铃下载" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/buyRingback"
+                    android:layout_width="130dip"
+                    android:layout_height="80dip"
+                    android:text="订购彩铃" />
+
+                <Button
+                    android:id="@+id/buyRingbackSms"
+                    android:layout_width="130dip"
+                    android:layout_height="80dip"
+                    android:layout_marginLeft="20dip"
+                    android:text="短信订购彩铃" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/openRingback"
+                    android:layout_width="130dip"
+                    android:layout_height="80dip"
+                    android:text="开通彩铃" />
+
+                <Button
+                    android:id="@+id/deletesong"
+                    android:layout_width="130dip"
+                    android:layout_height="80dip"
+                    android:layout_marginLeft="20dip"
+                    android:text="删除铃音" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/giveRingback"
+                    android:layout_width="130dip"
+                    android:layout_height="80dip"
+                    android:text="赠送彩铃" />
+
+                <Button
+                    android:id="@+id/openSongMonth"
+                    android:layout_width="130dip"
+                    android:layout_height="80dip"
+                    android:layout_marginLeft="20dip"
+                    android:text="全曲包月" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/smsSongMonth"
+                    android:layout_width="130dip"
+                    android:layout_height="80dip"
+                    android:text="短信全曲包月" />
+
+                <Button
+                    android:id="@+id/musicQuery"
+                    android:layout_width="130dip"
+                    android:layout_height="80dip"
+                    android:layout_marginLeft="20dip"
+                    android:text="歌曲查询类" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/openMem"
+                    android:layout_width="130dip"
+                    android:layout_height="80dip"
+                    android:text="咪咕特会开通" />
+
+                <Button
+                    android:id="@+id/smsOpenMem"
+                    android:layout_width="130dip"
+                    android:layout_height="80dip"
+                    android:layout_marginLeft="20dip"
+                    android:text="短信开通会员" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/onlineLse"
+                    android:layout_width="130dip"
+                    android:layout_height="80dip"
+                    android:text="获取在线听歌地址" />
+
+                <Button
+                    android:id="@+id/crbtPrelisten"
+                    android:layout_width="130dip"
+                    android:layout_height="80dip"
+                    android:layout_marginLeft="20dip"
+                    android:text="获取彩铃试听地址" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/crbtBox"
+                    android:layout_width="130dip"
+                    android:layout_height="80dip"
+                    android:text="查询个人铃音库" />
+
+                <Button
+                    android:id="@+id/setDefaultCrbt"
+                    android:layout_width="130dip"
+                    android:layout_height="80dip"
+                    android:layout_marginLeft="20dip"
+                    android:text="设置默认铃音" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/getDefaultCrbt"
+                    android:layout_width="130dip"
+                    android:layout_height="80dip"
+                    android:text="手机号查询默认铃音" />
+
+                <Button
+                    android:id="@+id/ringPrelisten"
+                    android:layout_width="130dip"
+                    android:layout_height="80dip"
+                    android:layout_marginLeft="20dip"
+                    android:text="振铃试听地址" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/crbtOpenCheck"
+                    android:layout_width="130dip"
+                    android:layout_height="80dip"
+                    android:text="查询开通彩铃" />
+
+                <Button
+                    android:id="@+id/singerInfo"
+                    android:layout_width="130dip"
+                    android:layout_height="80dip"
+                    android:layout_marginLeft="20dip"
+                    android:text="查询歌手信息" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/albumListbymusic"
+                    android:layout_width="130dip"
+                    android:layout_height="80dip"
+                    android:text="歌曲ID查专辑信息" />
+
+                <Button
+                    android:id="@+id/musicQuerybymusic"
+                    android:layout_width="130dip"
+                    android:layout_height="80dip"
+                    android:layout_marginLeft="20dip"
+                    android:text="歌曲ID查询歌曲信息" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

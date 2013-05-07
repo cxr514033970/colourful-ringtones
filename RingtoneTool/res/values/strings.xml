@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ringtone Tool App</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="ringtone_tool">Ringtone Tool</string>
+    <string name="hot_songs">热歌榜</string>
+    <string name="my_songs">我的歌曲</string>
+    <string name="result_equals_null">结果 = null</string>
+    <string name="result">结果</string>
+    <string name="confirm">确认</string>
+    <string name="please_wait">请稍候……</string>
+    <string name="phone_number">手机号</string>
+    <string name="data_is_loading">数据加载中...</string>
+    <string name="singer_id">歌手ID</string>
+    <string name="song_id">歌曲ID</string>
+    <string name="api_is_hiden">此接口已隐藏</string>
+    <string-array name="songslist_type">
+        <item >"获取榜单信息"</item>
+        <item >"获取榜单音乐信息"</item>
+        <item >"获取专辑信息"</item>
+        <item >"获取专辑音乐信息"</item>
+        <item >"获取歌手音乐信息"</item>
+        <item >"获取标签信息"</item>
+        <item >"获取标签音乐信息"</item>
+        <item >"关键字搜索歌曲"</item>
+    </string-array>
+        <string name="album_id">专辑ID</string>
+        <string name="youdiantian">有点甜</string>
+</resources>
