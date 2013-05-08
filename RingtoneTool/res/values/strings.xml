@@ -28,4 +28,6 @@
     </string-array>
         <string name="album_id">专辑ID</string>
         <string name="youdiantian">有点甜</string>
+        <string name="authenticating">authenticating</string>
+        <string name="has_been_inited">已初始化过</string>
 </resources>

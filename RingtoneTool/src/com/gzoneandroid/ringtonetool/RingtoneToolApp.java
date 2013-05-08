@@ -17,7 +17,7 @@ public class RingtoneToolApp extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        new T1().start();
+//        new T1().start();
     }
     private UIHandler mUIHandler = new UIHandler();
     private ProgressDialog mProgress = null;
