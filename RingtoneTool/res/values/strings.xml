@@ -29,4 +29,7 @@
     <string name="youdiantian">有点甜</string>
     <string name="authenticating">authenticating</string>
     <string name="has_been_inited">已初始化过</string>
+    <string name="loading_list">Loading list</string>
+    <string name="download">下载</string>
+    <string name="set_as_ringtone">设置铃声</string>
 </resources>
