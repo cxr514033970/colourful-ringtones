@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string name="app_name">Ringtone Tool App</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
@@ -26,6 +25,8 @@
         <item >"获取标签音乐信息"</item>
         <item >"关键字搜索歌曲"</item>
     </string-array>
-        <string name="album_id">专辑ID</string>
-        <string name="youdiantian">有点甜</string>
+    <string name="album_id">专辑ID</string>
+    <string name="youdiantian">有点甜</string>
+    <string name="authenticating">authenticating</string>
+    <string name="has_been_inited">已初始化过</string>
 </resources>
