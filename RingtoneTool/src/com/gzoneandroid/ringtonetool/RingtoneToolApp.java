@@ -10,7 +10,7 @@ import android.os.Looper;
 import android.os.Message;
 import android.widget.Toast;
 
-import com.cmsc.cmmusic.common.InitCmmInterface;
+import com.cmsc.cmmusic.init.InitCmmInterface;
 
 public class RingtoneToolApp extends Application {
 

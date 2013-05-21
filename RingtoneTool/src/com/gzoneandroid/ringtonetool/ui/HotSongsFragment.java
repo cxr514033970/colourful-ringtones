@@ -1,21 +1,12 @@
 package com.gzoneandroid.ringtonetool.ui;
 
-import java.util.Hashtable;
 import java.util.List;
-import java.util.zip.Inflater;
-
-import com.cmsc.cmmusic.common.InitCmmInterface;
-import com.cmsc.cmmusic.common.MusicQueryInterface;
-import com.cmsc.cmmusic.common.data.ChartInfo;
-import com.cmsc.cmmusic.common.data.ChartListRsp;
-import com.gzoneandroid.ringtonetool.CMMusicDemo;
-import com.gzoneandroid.ringtonetool.R;
 
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.content.DialogInterface.OnCancelListener;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
@@ -27,6 +18,11 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.cmsc.cmmusic.common.MusicQueryInterface;
+import com.cmsc.cmmusic.common.data.ChartInfo;
+import com.cmsc.cmmusic.common.data.ChartListRsp;
+import com.gzoneandroid.ringtonetool.R;
 
 public class HotSongsFragment extends ListFragment {
     private AlertDialog mDialog;
@@ -72,22 +68,27 @@ public class HotSongsFragment extends ListFragment {
             @Override
             protected void onPostExecute(ChartListRsp chartListRsp) {
                 // TODO Auto-generated method stub
-                if (chartListRsp == null) {
+                if (chartListRsp != null) {
                     Toast.makeText(getActivity().getApplicationContext(),
-                            chartListRsp.getResMsg().toString(),
+                            (chartListRsp.getResMsg() != null ? chartListRsp.getResMsg().toString() : "msg is null"),
                             Toast.LENGTH_LONG).show();
                 }
                 mDialog.dismiss();
-                
-                List<ChartInfo> infos = mChartListRsp.getChartInfos();
+                List<ChartInfo> infos = null;
+                if (mChartListRsp != null ) {
+                    infos = mChartListRsp.getChartInfos();
+                }
                 if (infos != null && infos.size() > 0) {
                     for (ChartInfo chartInfo : infos) {
                         Log.d("Debug", chartInfo.getChartName() + ", " + chartInfo.getChartCode());
                     }
                     setListAdapter(new ChartListAdapter());
                 } else {
-                    Toast.makeText(getActivity().getApplicationContext(),
-                            chartListRsp.getResMsg().toString(),
+                    Toast.makeText(
+                            getActivity().getApplicationContext(),
+                            (chartListRsp != null && chartListRsp.getResMsg() != null ? chartListRsp
+                                    .getResMsg().toString()
+                                    : ""),
                             Toast.LENGTH_LONG).show();
                 }
             }

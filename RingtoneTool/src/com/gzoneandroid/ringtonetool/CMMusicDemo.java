@@ -22,7 +22,6 @@ import android.widget.Toast;
 
 import com.cmsc.cmmusic.common.CMMusicCallback;
 import com.cmsc.cmmusic.common.FullSongManagerInterface;
-import com.cmsc.cmmusic.common.InitCmmInterface;
 import com.cmsc.cmmusic.common.MusicQueryInterface;
 import com.cmsc.cmmusic.common.OnlineListenerMusicInterface;
 import com.cmsc.cmmusic.common.RingbackManagerInterface;
@@ -40,6 +39,7 @@ import com.cmsc.cmmusic.common.data.Result;
 import com.cmsc.cmmusic.common.data.SingerInfoRsp;
 import com.cmsc.cmmusic.common.data.StreamRsp;
 import com.cmsc.cmmusic.common.data.TagListRsp;
+import com.cmsc.cmmusic.init.InitCmmInterface;
 
 public class CMMusicDemo extends Activity implements OnClickListener {
     private final static String LOG_TAG = "CMMusicDemo";

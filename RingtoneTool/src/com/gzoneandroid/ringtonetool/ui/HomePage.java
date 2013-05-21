@@ -12,7 +12,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.cmsc.cmmusic.common.InitCmmInterface;
+import com.cmsc.cmmusic.init.InitCmmInterface;
 import com.gzoneandroid.ringtonetool.R;
 
 public class HomePage extends Activity {
